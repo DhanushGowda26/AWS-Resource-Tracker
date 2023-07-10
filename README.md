@@ -38,10 +38,10 @@ The cron job is scheduled to run every Monday at 6 PM. It executes the `aws_reso
 
 The line  `0 18 * * 1 /path/to/aws_resource_tracker.sh` is an example of a cron job entry in the crontab file. Let's break down what each field represents:
 
-0: The minute field. In this case, it is set to 0, indicating the cron job will run at the start of the hour.
-18: The hour field. It is set to 18, representing 6 PM in a 24-hour format.
-*: The day-of-the-month field. It is set to *, meaning any day of the month.
-*: The month field. It is also set to *, indicating any month.
+0: The minute field. In this case, it is set to 0, indicating the cron job will run at the start of the hour.<br>
+18: The hour field. It is set to 18, representing 6 PM in a 24-hour format.<br>
+*: The day-of-the-month field. It is set to *, meaning any day of the month.<br>
+*: The month field. It is also set to *, indicating any month.<br>
 1: The day-of-the-week field. Here, it is set to 1, representing Monday.
 
 Now, the `aws_resource_status.sh` script will be executed automatically at the specified time, updating the `aws_resource_tracker` file with the latest resource status.
